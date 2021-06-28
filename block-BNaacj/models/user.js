@@ -9,7 +9,7 @@ const userSchema =  new Schema({
     favorites: [String],
     marks: [Number],
     password: { type: String, minlength: 5, maxlength: 15},
-    createdAt: { type: Date, default: Date.now()}
+    createdAt: { type: Date, default: new Date()}
 });
 
 
